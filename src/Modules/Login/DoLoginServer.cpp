@@ -40,8 +40,8 @@ CImPdu* DoLoginServer::doLogin()
 {
     m_pImPdu = 0;
     PTR_NULL(m_pLinkSocket);
-	CString ip = _T("122.225.68.125");	
-	BOOL bRet = m_pLinkSocket->connect(ip, 9008);
+	CString ip = _T("1.1.1.1");	
+	BOOL bRet = m_pLinkSocket->connect(ip, 1001);
 	PTR_NULL(bRet);
 
     if(_waitConnectedNotify())

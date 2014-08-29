@@ -51,7 +51,7 @@ struct TTConfig : public TTConfigNeedCache
 	UInt8			myselectStatus;
 	CString			csUserId;
 	CString			token;
-	CString			fileSysAddr = _T("http://122.225.68.125:8001/");
+	CString			fileSysAddr = _T("http://1.1.1.1:1001/");
 	std::string		userId;
 };
 
