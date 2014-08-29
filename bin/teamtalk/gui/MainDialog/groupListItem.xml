@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+    <HorizontalLayout>
+      <VerticalLayout name="logo_container" width="40" padding="7,10,0,0">
+        <Button name="logo" width="40" height="40" />
+      </VerticalLayout>
+      <VerticalLayout padding="6,0,0,0" >
+        <HorizontalLayout padding="0,2,0,0">
+          <Label name="nickname" bordersize="0" textcolor="#FF000000" disabledtextcolor="#FF808080" />
+          <Label name="description" visible="false" bordersize="0" textcolor="#FF808080" />
+        </HorizontalLayout>
+      </VerticalLayout>
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

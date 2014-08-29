@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="360,600" sizebox="4,4,4,4" caption="0,0,0,40" mininfo="200,300" roundcorner="4,4">
+    <Font name="微软雅黑" size="12" bold="false" italic="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true" italic="false" />
+    <Default name="VScrollBar" value="button1normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,0,16,16&apos;&quot; button1hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,0,32,16,16&apos;&quot; button1pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,0,48,16&apos;&quot; button2normalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,32,16,48&apos;&quot; button2hotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,32,32,48&apos;&quot; button2pushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,32,48,48&apos;&quot; thumbnormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,48,16,64&apos; corner=&apos;0,2,0,2&apos;&quot; thumbhotimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;16,48,32,64&apos; corner=&apos;0,2,0,2&apos;&quot; thumbpushedimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;32,48,48,64&apos; corner=&apos;0,2,0,2&apos;&quot; bknormalimage=&quot;file=&apos;scrollbar.png&apos; source=&apos;0,16,16,32&apos;&quot;" />
+    <HorizontalLayout name="bg" bkimage="file=&apos;bg0.png&apos; corner=&apos;600,200,1,1&apos;">
+        <VerticalLayout bkimage="file=&apos;border.png&apos; corner=&apos;5,5,5,5&apos;" inset="1,0,1,1">
+            <HorizontalLayout height="22">
+                <VerticalLayout width="60" inset="2,2,0,0">
+                    <Label text="TeamTalk" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+                </VerticalLayout>
+                <VerticalLayout />
+                <VerticalLayout width="104">
+                    <Button name="minbtn" float="true" pos="0,0,0,0" width="28" height="19" maxheight="19" maxwidth="28" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_mini_normal.png&apos;" hotimage="btn_mini_highlight.png" pushedimage="btn_mini_down.png" />
+                    <Button name="maxbtn" float="true" pos="28,0,0,0" width="28" height="19" maxheight="19" maxwidth="28" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_max_normal.png&apos;" hotimage="btn_max_highlight.png" pushedimage="btn_max_down.png" />
+                    <Button name="restorebtn" visible="false" float="true" pos="28,0,0,0" width="28" height="19" maxheight="19" maxwidth="28" align="center" normalimage="file=&apos;btn_restore_normal.png&apos;" hotimage="btn_restore_highlight.png" pushedimage="btn_restore_down.png" />
+                    <Button name="closebtn" float="true" pos="56,0,0,0" width="39" height="19" maxheight="19" maxwidth="39" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;btn_close_normal.png&apos;" hotimage="btn_close_highlight.png" pushedimage="btn_close_down.png" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="58">
+                <VerticalLayout width="70" inset="5,0,0,0">
+                    <Button width="58" height="58" bkimage="file=&apos;man_big.png&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+                <VerticalLayout inset="0,6,0,4">
+                    <HorizontalLayout height="22">
+                        <Text text="修罗" textpadding="2,0,2,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="1" align="wrap" />
+                        <Control width="10" />
+                        <Button width="40" height="20" bkimage="file=&apos;icon_a.png&apos; dest=&apos;3,3,17,17&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_hot.png&apos; corner=&apos;2,8,2,2&apos;" />
+                    </HorizontalLayout>
+                    <HorizontalLayout>
+                        <Button name="signaturetip" text="编辑个性签名" height="23" textpadding="4,0,4,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" hotimage="file=&apos;btn_hot.png&apos; corner=&apos;2,8,2,2&apos;" />
+                        <RichEdit />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout width="60" inset="4,4,4,4">
+                    <Button width="48" height="48" bkimage="file=&apos;s_a1.png&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <VerticalLayout height="22">
+                <HorizontalLayout>
+                    <HorizontalLayout width="72" height="18" padding="5,0,0,0">
+                        <Button name="friend_circleBtn" bkimage="file=&apos;friend_circle.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;friend_circle.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; corner=&apos;2,2,2,2&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; corner=&apos;2,2,2,2&apos;  mask=&apos;0xffffffff&apos;" />
+                        <Button name="mailBtn" bkimage="file=&apos;mail.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mail.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; corner=&apos;2,2,2,2&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; corner=&apos;2,2,2,2&apos;  mask=&apos;0xffffffff&apos;" />
+                        <Button name="XiaoYouBtn" bkimage="file=&apos;MainPanelServiceBarExt_XiaoYou.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;MainPanelServiceBarExt_XiaoYou.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                        <Button name="sosoBtn" bkimage="file=&apos;soso.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;soso.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; corner=&apos;2,2,2,2&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; corner=&apos;2,2,2,2&apos;  mask=&apos;0xffffffff&apos;" />
+                    </HorizontalLayout>
+                    <HorizontalLayout />
+                    <HorizontalLayout width="72" height="22" inset="0,0,0,2">
+                        <Button text="{i MsgBox.png}{/i}" width="24" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="center" hotimage="file=&apos;btn_hot.png&apos; corner=&apos;2,8,2,2&apos;" />
+                        <Button name="bkskinbtn" text="{i skin.png}{/i}" width="24" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" align="center" hotimage="file=&apos;btn_hot.png&apos; corner=&apos;2,8,2,2&apos;" />
+                        <Button name="colorskinbtn" width="24" height="20" bkimage="file=&apos;colour.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;colour.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                    </HorizontalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+      <HorizontalLayout height="27" bkimage="file='search_bk.png'">
+      
+        <Edit visible="true" name="search_edit" inset="4,4,4,3" height="27" tooltip="搜索联系人，网页信息和问问答案" multiline="false" />
+        <Button name="searchbtn" showhtml="true" height="27" width="24" text="{i search_btn.png}{/i}" />
+      </HorizontalLayout>
+			<VerticalLayout name="SearchUserResPanel" visible="false" bkimage="file=&apos;glow.png&apos; corner=&apos;2,2,2,2&apos;" inset="0,4,0,0">
+			<FriendList header="hidden" itemshowhtml="true" name="SearchUserList" vscrollbar="true" />
+			</VerticalLayout>
+            <VerticalLayout name="MainListPanel" bkimage="file=&apos;glow.png&apos; corner=&apos;2,2,2,2&apos;" inset="0,4,0,0">
+                <HorizontalLayout height="26" padding="60,0,0,0" inset="4,0,4,0">
+				    <Option name="RecentlyListbtn" text="最近联系人" width="70" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="true" selectedimage="file=&apos;tab_btn.png&apos;" />
+                    <Option name="friendbtn" text="组织架构" width="70" height="26" disabledtextcolor="#FFA7A6AA" align="center" group="true" selected="true" selectedimage="file=&apos;tab_btn.png&apos;" />
+                    <Option name="groupbtn" text="群/讨论组" width="70" height="26" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" group="true" selectedimage="file=&apos;tab_btn.png&apos;" />
+
+                </HorizontalLayout>
+                <HorizontalLayout>
+                    <HorizontalLayout width="1" />
+                    <VerticalLayout name="LeftMainPanel" width="35">
+                        <VerticalLayout width="29" padding="5,0,0,0" bkimage="file=&apos;bjLeftPanel.png&apos; corner=&apos;2,100,2,2&apos;">
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Button name="QzoneBtn" width="24" height="24" bkimage="file=&apos;mainleft_Qzonebtn24_qzonebtn1.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mainleft_Qzonebtn24_qzonebtn1.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Button name="QQTradeCenterBtn" width="24" height="24" bkimage="file=&apos;mainleft_QQTradeCenter1.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;mainleft_QQTradeCenter1.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Button name="paipaiBtn" width="24" height="24" bkimage="file=&apos;paipai1.png&apos; mask=&apos;0xffc0c0c0&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;paipai1.png&apos; mask=&apos;0xffc0c0c0&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffc0c0c0&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffc0c0c0&apos;" />
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Button name="PaiPaiChongzhiBtn" width="24" height="24" bkimage="file=&apos;PaiPaiChongzhi1.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;PaiPaiChongzhi1.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            <Button name="addBtn" width="24" height="24" bkimage="file=&apos;add.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;add.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Label height="5" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                        </VerticalLayout>
+                    </VerticalLayout>
+                    <TabLayout name="tabs" bkimage="file=&apos;list_bk.png&apos;">
+                        <HorizontalLayout>
+                            <FriendList header="hidden" itemshowhtml="true" name="friends" vscrollbar="true" />
+                        </HorizontalLayout>
+                        <HorizontalLayout>
+                            <GroupList header="hidden" itemshowhtml="true" name="groups" vscrollbar="true" />
+                        </HorizontalLayout>
+                        <HorizontalLayout>
+                            <RecentlyList header="hidden" itemshowhtml="true" name="RecentlyList" vscrollbar="true" />
+                        </HorizontalLayout>
+                    </TabLayout>
+                    <HorizontalLayout width="1" inset="0,1,1,0" />
+                </HorizontalLayout>
+            </VerticalLayout>
+            <VerticalLayout height="90">
+                <VerticalLayout height="20" padding="5,10,0,0">
+                    <HorizontalLayout>
+                        <Button name="btnleft" width="18" height="18" padding="5,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;main_tabbtn_leftnormal.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;main_tabbtn_lefthighlight.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;main_tabbtn_lefthighlight.png&apos; mask=&apos;0xffffffff&apos;" />
+                        <Button name="btnright" visible="false" width="18" height="18" padding="5,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;main_tabbtn_rightnormal.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;main_tabbtn_righthighlight.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;main_tabbtn_righthighlight.png&apos; mask=&apos;0xffffffff&apos;" />
+                        <Container width="20" />
+                        <Button name="phone" width="20" height="20" bkimage="file=&apos;Wireless.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;Wireless.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; corner=&apos;2,2,2,2&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; corner=&apos;2,2,2,2&apos; mask=&apos;0xffffffff&apos;" />
+                        <Button name="QQpalycenter" width="20" height="20" bkimage="file=&apos;game.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;game.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                        <Button width="20" height="20" bkimage="file=&apos;pet.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;pet.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                        <Button width="20" height="20" bkimage="file=&apos;live.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;live.png&apos; mask=&apos;0xffc0c0c0&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffc0c0c0&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffc0c0c0&apos;" />
+                        <Button width="20" height="20" bkimage="file=&apos;music.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;music.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                    </HorizontalLayout>
+                </VerticalLayout>
+                <VerticalLayout height="50" padding="5,10,0,0">
+                    <HorizontalLayout>
+                        <HorizontalLayout>
+                            <Button name="MainMenu" width="40" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;menu_btn_normal.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;menu_btn_highlight.png&apos; mask=&apos;0x00000000&apos;" pushedimage="file=&apos;menu_btn_highlight.png&apos; mask=&apos;0xffff00ff&apos;" />
+                            <Button name="ToolsBtn" width="20" height="20" padding="0,10,0,0" bkimage="file=&apos;Tools.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;Tools.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Button name="QQSafeBtn" width="20" height="20" padding="0,10,0,0" bkimage="file=&apos;QQSafe.png&apos; mask=&apos;0xff000000&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;QQSafe.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Button name="messageCenterBtn" width="20" height="20" padding="0,10,0,0" bkimage="file=&apos;message.png&apos; mask=&apos;0xffffffff&apos;" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;message.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                        </HorizontalLayout>
+                        <HorizontalLayout />
+                        <HorizontalLayout width="22" padding="0,9,10,0">
+                            <Option name="AppGrid" visible="false" width="22" height="22" bkimage="file=&apos;AppBox_grid.png&apos; mask=&apos;0xffffffff&apos;" bordercolor="#FF768D9B" textpadding="0,0,0,2" textcolor="#FFFF0000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" group="quickbar" selected="true" selectedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                            <Option name="AppHome" width="22" height="22" bkimage="file=&apos;AppBox_Home.png&apos; mask=&apos;0xffffffff&apos;" bordercolor="#FF768D9B" textpadding="0,0,0,2" textcolor="#FFFF0000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file=&apos;allbtn_nor.png&apos; mask=&apos;0xffffffff&apos;" hotimage="file=&apos;allbtn_over.png&apos; mask=&apos;0xffffffff&apos;" pushedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" group="quickbar" selectedimage="file=&apos;allbtn_down.png&apos; mask=&apos;0xffffffff&apos;" />
+                        </HorizontalLayout>
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </VerticalLayout>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>
